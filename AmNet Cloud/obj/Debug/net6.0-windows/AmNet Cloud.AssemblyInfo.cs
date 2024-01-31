@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("P_Bulles_Cloud")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("AmNet Cloud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("P_Bulles_Cloud")]
-[assembly: System.Reflection.AssemblyTitleAttribute("P_Bulles_Cloud")]
+[assembly: System.Reflection.AssemblyProductAttribute("AmNet Cloud")]
+[assembly: System.Reflection.AssemblyTitleAttribute("AmNet Cloud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
