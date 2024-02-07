@@ -49,48 +49,66 @@ namespace AmNet_Cloud
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string MySqlCon = "server=localhost; port=6033; user=root; password=root; database=db_P_Bulles_Cloud";
-            MySqlConnection mySqlConnection = new MySqlConnection(MySqlCon);
-
             // Récupérer les données du formulaire
             string pseudo = txtboxPseudo.Text;
             string email = txtboxEmail.Text;
             string password = txtboxPassword.Text;
-            // Ajoutez d'autres champs en fonction de votre table
 
-            // Créer la connexion à la base de données
-            using (MySqlConnection connexion = new MySqlConnection(MySqlCon))
+            if (email.lastindexof("@") > -1)
             {
-                try
+                if (txtboxPassword.Text != txtBoxPassword2.Text)
                 {
-                    // Ouvrir la connexion
-                    connexion.Open();
+                    MessageBox.Show("Erreur : Les mots de passes ne sont pas identiques");
+                }
+                else
+                {
+                    string MySqlCon = "server=localhost; port=6033; user=root; password=root; database=db_P_Bulles_Cloud";
+                    MySqlConnection mySqlConnection = new MySqlConnection(MySqlCon);
 
-                    // Requête SQL d'insertion
-                    string query = "INSERT INTO users (pseudo, email, password) VALUES (@Pseudo, @Email, @Mdp)";
+                    
+                    // Ajoutez d'autres champs en fonction de votre table
 
-                    // Créer la commande SQL
-                    using (MySqlCommand cmd = new MySqlCommand(query, connexion))
+                    // Créer la connexion à la base de données
+                    using (MySqlConnection connexion = new MySqlConnection(MySqlCon))
                     {
-                        // Ajouter les paramètres
-                        cmd.Parameters.AddWithValue("@Pseudo", pseudo);
-                        cmd.Parameters.AddWithValue("@Email", email);
-                        cmd.Parameters.AddWithValue("@Mdp", password);
+                        try
+                        {
+                            // Ouvrir la connexion
+                            connexion.Open();
 
-                        // Exécuter la commande
-                        cmd.ExecuteNonQuery();
+                            // Requête SQL d'insertion
+                            string query = "INSERT INTO users (pseudo, email, password) VALUES (@Pseudo, @Email, @Mdp)";
 
-                        // Afficher un message de réussite
-                        MessageBox.Show("Utilisateur enregistré avec succès !");
+                            // Créer la commande SQL
+                            using (MySqlCommand cmd = new MySqlCommand(query, connexion))
+                            {
+                                // Ajouter les paramètres
+                                cmd.Parameters.AddWithValue("@Pseudo", pseudo);
+                                cmd.Parameters.AddWithValue("@Email", email);
+                                cmd.Parameters.AddWithValue("@Mdp", password);
+
+                                // Exécuter la commande
+                                cmd.ExecuteNonQuery();
+
+                                // Afficher un message de réussite
+                                MessageBox.Show("Utilisateur enregistré avec succès !");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Gérer les erreurs ici
+                            MessageBox.Show("Erreur : " + ex.Message);
+                        }
                     }
                 }
-                catch (Exception ex)
-                {
-                    // Gérer les erreurs ici
-                    MessageBox.Show("Erreur : " + ex.Message);
-                }
+            }
+            else
+            {
+                MessageBox.Show("Mail invalide");
             }
         }
+
+
 
         private void txtboxPseudo_TextChanged(object sender, EventArgs e)
         {

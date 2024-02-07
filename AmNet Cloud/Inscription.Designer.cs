@@ -37,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtboxPseudo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBoxPassword2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,6 +87,7 @@
             this.txtboxPassword.Location = new System.Drawing.Point(120, 261);
             this.txtboxPassword.Multiline = true;
             this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.PasswordChar = '*';
             this.txtboxPassword.Size = new System.Drawing.Size(132, 24);
             this.txtboxPassword.TabIndex = 3;
             this.txtboxPassword.TextChanged += new System.EventHandler(this.txtboxPassword_TextChanged);
@@ -127,14 +128,15 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Répetez le mot de passe";
             // 
-            // textBox3
+            // txtBoxPassword2
             // 
-            this.textBox3.Location = new System.Drawing.Point(120, 315);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 24);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtBoxPassword2.Location = new System.Drawing.Point(120, 315);
+            this.txtBoxPassword2.Multiline = true;
+            this.txtBoxPassword2.Name = "txtBoxPassword2";
+            this.txtBoxPassword2.PasswordChar = '*';
+            this.txtBoxPassword2.Size = new System.Drawing.Size(132, 24);
+            this.txtBoxPassword2.TabIndex = 4;
+            this.txtBoxPassword2.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label5
             // 
@@ -164,7 +166,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtBoxPassword2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtboxPseudo);
             this.Controls.Add(this.button1);
@@ -192,7 +194,7 @@
         private Label label3;
         private TextBox txtboxPseudo;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox txtBoxPassword2;
         private Label label5;
         private Button button2;
     }
