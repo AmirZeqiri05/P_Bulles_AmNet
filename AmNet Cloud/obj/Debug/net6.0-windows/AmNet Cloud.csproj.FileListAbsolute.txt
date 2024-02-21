@@ -35,3 +35,5 @@ C:\Users\ps70dji\Desktop\GitHub\P_Bulles_Cloud\AmNet Cloud\bin\Debug\net6.0-wind
 C:\Users\ps70dji\Desktop\GitHub\P_Bulles_Cloud\AmNet Cloud\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\ps70dji\Desktop\GitHub\P_Bulles_Cloud\AmNet Cloud\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\ps70dji\Desktop\GitHub\P_Bulles_Cloud\AmNet Cloud\obj\Debug\net6.0-windows\AmNet Cloud.csproj.CopyComplete
+C:\Users\ps70dji\Desktop\GitHub\P_Bulles_Cloud\AmNet Cloud\bin\Debug\net6.0-windows\BCrypt.Net-Next.dll
+C:\Users\ps70dji\Desktop\GitHub\P_Bulles_Cloud\AmNet Cloud\obj\Debug\net6.0-windows\AmNet_Cloud.Accueil.resources

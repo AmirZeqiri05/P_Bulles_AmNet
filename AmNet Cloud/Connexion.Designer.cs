@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Email = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtboxEmail = new System.Windows.Forms.TextBox();
+            this.txtboxPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -49,21 +49,19 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Email
+            // txtboxEmail
             // 
-            this.Email.Location = new System.Drawing.Point(120, 220);
-            this.Email.Multiline = true;
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(132, 24);
-            this.Email.TabIndex = 1;
+            this.txtboxEmail.Location = new System.Drawing.Point(120, 220);
+            this.txtboxEmail.Name = "txtboxEmail";
+            this.txtboxEmail.Size = new System.Drawing.Size(132, 23);
+            this.txtboxEmail.TabIndex = 1;
             // 
-            // textBox1
+            // txtboxPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 272);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 24);
-            this.textBox1.TabIndex = 2;
+            this.txtboxPassword.Location = new System.Drawing.Point(120, 272);
+            this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.Size = new System.Drawing.Size(132, 23);
+            this.txtboxPassword.TabIndex = 2;
             // 
             // label1
             // 
@@ -73,7 +71,6 @@
             this.label1.Size = new System.Drawing.Size(36, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "Email";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -83,7 +80,6 @@
             this.label2.Size = new System.Drawing.Size(77, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mot de passe";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -113,7 +109,6 @@
             this.label3.Size = new System.Drawing.Size(157, 15);
             this.label3.TabIndex = 7;
             this.label3.Text = "Vous n\'avez pas de compte ?";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Connexion
             // 
@@ -125,12 +120,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Email);
+            this.Controls.Add(this.txtboxPassword);
+            this.Controls.Add(this.txtboxEmail);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Connexion";
             this.Text = "Connexion";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,8 +134,8 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private TextBox Email;
-        private TextBox textBox1;
+        private TextBox txtboxEmail;
+        private TextBox txtboxPassword;
         private Label label1;
         private Label label2;
         private Button button1;

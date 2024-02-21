@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ksm2s3Qd6pQEwzTtTRzZkPtpONZbvh3N60pPZkGmu0zkjhh8kN5B8w4ikpBKBfg5S/ZzWg+8CLaQOJJcqQqfIg==",
+  "dgSpecHash": "Jecrmq7CARHmw5WIY/ZExD2TfKoMB+BL+qpkfbT6sMTh0aUKNifYqGc0kRksMJlIqJd+QB5HscNnQCY6MvlwAA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ps70dji\\Desktop\\GitHub\\P_Bulles_Cloud\\AmNet Cloud\\AmNet Cloud.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ps70dji\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\ps70dji\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\ps70dji\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",
     "C:\\Users\\ps70dji\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",

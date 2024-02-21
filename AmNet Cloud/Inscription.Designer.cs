@@ -52,7 +52,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -90,7 +89,6 @@
             this.txtboxPassword.PasswordChar = '*';
             this.txtboxPassword.Size = new System.Drawing.Size(132, 24);
             this.txtboxPassword.TabIndex = 3;
-            this.txtboxPassword.TextChanged += new System.EventHandler(this.txtboxPassword_TextChanged);
             // 
             // txtboxEmail
             // 
@@ -99,7 +97,6 @@
             this.txtboxEmail.Name = "txtboxEmail";
             this.txtboxEmail.Size = new System.Drawing.Size(132, 24);
             this.txtboxEmail.TabIndex = 2;
-            this.txtboxEmail.TextChanged += new System.EventHandler(this.txtboxEmail_TextChanged);
             // 
             // label3
             // 
@@ -117,7 +114,6 @@
             this.txtboxPseudo.Name = "txtboxPseudo";
             this.txtboxPseudo.Size = new System.Drawing.Size(132, 24);
             this.txtboxPseudo.TabIndex = 1;
-            this.txtboxPseudo.TextChanged += new System.EventHandler(this.txtboxPseudo_TextChanged);
             // 
             // label4
             // 
@@ -136,7 +132,6 @@
             this.txtBoxPassword2.PasswordChar = '*';
             this.txtBoxPassword2.Size = new System.Drawing.Size(132, 24);
             this.txtBoxPassword2.TabIndex = 4;
-            this.txtBoxPassword2.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label5
             // 
@@ -146,7 +141,6 @@
             this.label5.Size = new System.Drawing.Size(152, 15);
             this.label5.TabIndex = 19;
             this.label5.Text = "Vous avez déjà un compte ?";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button2
             // 
@@ -160,6 +154,7 @@
             // 
             // Inscription
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
@@ -177,7 +172,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Inscription";
             this.Text = "Inscription";
-            this.Load += new System.EventHandler(this.Inscription_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
