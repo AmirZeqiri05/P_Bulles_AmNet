@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "T2o2lzSgviBSDeDpFVW/rBsyRFL7h9Dgz5gydWC+bdh8u33HXvH/yEWKRh1LnJSfKnKHuMKd1k9xDxlGcLepAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ps70dji\\Desktop\\GitHub\\P_Bulles_Cloud\\AmNet_Cloud\\AmNet_Cloud.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ps70dji\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512"
+  ],
+  "logs": []
+}
