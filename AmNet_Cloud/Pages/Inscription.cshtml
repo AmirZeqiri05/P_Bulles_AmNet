@@ -1,0 +1,30 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "AmNet Cloud - Inscription";
+}
+
+<html>
+<body>
+    <div class="container">
+        <h2>Inscription</h2>
+        <form>
+            <label for="pseudo">Pseudo:</label>
+            <input type="text" id="pseudo" name="pseudo" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirmation de mot de passe:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+        <br />
+        <p>Vous avez un compte ? <a href="/Index">Connectez-vous</a></p>
+    </div>
+</body>
+</html>
