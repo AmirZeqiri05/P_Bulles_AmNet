@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qV7zJnAZtQRJLHjSqqz7NC7Z7O+AKccCFVv1U+rDMJih6FShM8b+o8RicKsMyAP0Q64SGYp9frm2TUcGcnprKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ps70dji\\Desktop\\GitHub\\P_Bulles_Cloud\\HelloWorldConsole\\HelloWorldConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ps70dji\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}

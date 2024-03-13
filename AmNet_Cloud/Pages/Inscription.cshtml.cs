@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Data;
+using System.Configuration;
+using MySql.Data.MySqlClient;
 
 namespace AmNet_Cloud.Pages
 {
